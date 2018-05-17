@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:paddingLeft="40dp">
+
+    <ImageView
+        android:id="@+id/expend"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/maillist_icon_tel" />
+
+    <RelativeLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.ycjt.sx.widget.view.CircleImageView
+            android:id="@+id/iv_subsidiary_child_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ren_icon" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_maillist_subsidiary_child_depart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_subsidiary_child_icon"
+            android:fontFamily="@font/custom_regular"
+            android:text="部门"
+            android:textColor="#070B11"
+            android:textSize="16sp" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_maillist_subsidiary_child_depart_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_maillist_subsidiary_child_depart"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_subsidiary_child_icon"
+            android:fontFamily="@font/custom_regular"
+            android:text="职位"
+            android:textColor="#9B9C9D"
+            android:textSize="10sp" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_maillist_subsidiary_child_depart_leader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_maillist_subsidiary_child_depart"
+            android:background="@drawable/shape_leader"
+            android:fontFamily="@font/custom_regular"
+            android:padding="3dp"
+            android:text="负责人"
+            android:textColor="#59D299"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/parent_dashed_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/parent_layout"
+        android:background="@drawable/shape_subsidiary_parent_style"
+        android:layerType="software" />
+
+
+</RelativeLayout>

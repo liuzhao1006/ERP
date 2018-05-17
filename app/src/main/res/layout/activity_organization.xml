@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFE5E2"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/activity_head" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_organization_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlv_organization_selector"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/custom_regular"
+        android:text="请选择你需要的组织机构,精确处理业务信息! 登录后可在我的切换组织机构!"
+        android:textColor="#999B9B"
+        android:textSize="12sp" />
+</RelativeLayout>

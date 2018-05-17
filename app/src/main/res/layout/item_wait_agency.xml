@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_agency_wait_theme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="刘宝(销售订单)"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/tv_agency_wait_state"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:layout_marginRight="@dimen/default_margin_8dp"
+            android:gravity="center|right"
+            android:src="@mipmap/agency_no_read_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_agency_wait_node"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_agency_search_theme"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="总监审核"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_agency_wait_auditname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_agency_search_theme"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="总监审核"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_agency_wait_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_agency_search_theme"
+            android:layout_margin="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1.2"
+            android:gravity="center|right"
+            android:text="2017年06月22日18:10"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7FFFE"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_head"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="#EDEFF0" />
+
+    <com.ycjt.sx.widget.Ripple xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_92_dip"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleBackground="#FEFFFF"
+        app:mrl_rippleColor="#F5F6F7"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleDimension="10dp"
+        app:mrl_rippleDuration="1000"
+        app:mrl_rippleFadeDuration="500"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_ripplePersistent="false"
+        app:mrl_rippleRoundedCorners="@dimen/dimen_1_dip">
+
+        <include layout="@layout/item_personal_info" />
+
+    </com.ycjt.sx.widget.Ripple>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F1F2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/default_margin_16dp"
+        android:background="#FEFFFF">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEF2F2" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_personal_updata_old_pwd"
+            style="@style/TextViewEditTextModify"
+            android:layout_alignBaseline="@+id/et_personal_updata_old_pwd"
+            android:layout_alignBottom="@+id/et_personal_updata_old_pwd"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/custom_regular"
+            android:text="旧密码" />
+
+        <EditText
+            android:id="@+id/et_personal_updata_old_pwd"
+            style="@style/EditTextTextViewModify"
+            android:layout_toRightOf="@id/tv_personal_updata_old_pwd" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EDEFF0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FEFFFF">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_personal_updata_new_pwd"
+            style="@style/TextViewEditTextModify"
+            android:fontFamily="@font/custom_regular"
+            android:text="新密码" />
+
+        <EditText
+            android:id="@+id/et_personal_updata_new_pwd"
+            style="@style/EditTextTextViewModify"
+            android:layout_toRightOf="@id/tv_personal_updata_new_pwd" />
+
+        <View style="@style/ViewPersonalSetting" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EDEFF0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FEFFFF">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_personal_updata_confirm_pwd"
+            style="@style/TextViewEditTextModify"
+            android:fontFamily="@font/custom_regular"
+            android:text="确认新密码" />
+
+        <EditText
+            android:id="@+id/et_personal_updata_confirm_pwd"
+            style="@style/EditTextTextViewModify"
+            android:layout_toRightOf="@id/tv_personal_updata_confirm_pwd" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEFF0" />
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:id="@+id/tv_personal_forget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin_8dp"
+        android:fontFamily="@font/custom_regular"
+        android:padding="5dp"
+        android:text="若忘记旧密码,请联系系统管理员找回或重置!"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/default_text_size_12" />
+
+    <Button
+        android:id="@+id/btn_personal_updata_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_button"
+        android:fontFamily="@font/custom_regular"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

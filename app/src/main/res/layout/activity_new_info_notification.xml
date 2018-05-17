@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteSmoke"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/custom_regular"
+            android:gravity="center_vertical"
+            android:text="接收新消息"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/sb_personal_new_info_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            app:sb_background="#FFFFFF"
+            app:sb_checked_color="#61E2A2"
+            app:sb_enable_effect="true" />
+
+        <View style="@style/ViewPersonalSetting" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/custom_regular"
+            android:gravity="center_vertical"
+            android:text="声音"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/sb_personal_new_info_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            app:sb_background="#FFFFFF"
+            app:sb_checked_color="#61E2A2"
+            app:sb_enable_effect="true" />
+
+        <View style="@style/ViewPersonalSetting" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/custom_regular"
+            android:gravity="center_vertical"
+            android:text="震动"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/sb_personal_new_info_shock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            app:sb_background="#FFFFFF"
+            app:sb_checked_color="#61E2A2"
+            app:sb_enable_effect="true" />
+
+        <View style="@style/ViewPersonalSetting" />
+    </RelativeLayout>
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:fontFamily="@font/custom_regular"
+        android:padding="3dp"
+        android:text="你可以设置是否设置是否需要声音或者震动"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/default_text_size_12" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/custom_regular"
+            android:gravity="center_vertical"
+            android:text="免打扰模式"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/sb_personal_new_info_mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            app:sb_background="#FFFFFF"
+            app:sb_checked_color="#61E2A2"
+            app:sb_enable_effect="true" />
+
+        <View style="@style/ViewPersonalSetting" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/custom_regular"
+            android:gravity="center_vertical"
+            android:text="开始时间"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_personal_new_info_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/default_margin_16dp"
+            android:layout_toLeftOf="@id/iv_personal_new_info_right_1"
+            android:fontFamily="@font/custom_regular"
+            android:gravity="center_vertical"
+            android:text="时间"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_personal_new_info_right_1"
+            style="@style/ImageView" />
+
+        <View style="@style/ViewPersonalSetting" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/custom_regular"
+            android:gravity="center_vertical"
+            android:text="结束时间"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_personal_new_info_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/default_margin_16dp"
+            android:layout_toLeftOf="@id/iv_personal_new_info_right_2"
+            android:fontFamily="@font/custom_regular"
+            android:gravity="center_vertical"
+            android:text="时间"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_personal_new_info_right_2"
+            style="@style/ImageView" />
+
+    </RelativeLayout>
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:fontFamily="@font/custom_regular"
+        android:padding="3dp"
+        android:text="开启后,在设定时间内不接受任何消息提醒"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/default_text_size_12" />
+</LinearLayout>

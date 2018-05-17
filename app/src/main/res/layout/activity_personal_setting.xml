@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7FFFE"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_head"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="#FAFAFB" />
+
+    <RelativeLayout
+
+        android:id="@+id/rl_personal_setting_img"
+        style="@style/RelativeLayoutPersonalSetting"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/default_margin_16dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FAFAFB" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            style="@style/TextViewPersonalSetting"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/custom_regular"
+            android:text="头像" />
+
+        <com.ycjt.sx.widget.view.CircleImageView
+            android:id="@+id/iv_personal_setting_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/default_margin_8dp"
+            android:layout_toLeftOf="@id/iv_personal_setting_right_img_1"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <ImageView
+            android:id="@+id/iv_personal_setting_right_img_1"
+            style="@style/ImageView" />
+
+
+    </RelativeLayout>
+
+    <View style="@style/ViewPersonalSetting" />
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_setting_name"
+        style="@style/RelativeLayoutPersonalSetting">
+
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            style="@style/TextViewPersonalSetting"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/custom_regular"
+            android:text="性别" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_personal_setting_sex"
+            style="@style/TextViewPersonalSettingUpdata"
+            android:layout_toLeftOf="@id/iv_personal_setting_right_img_2"
+            android:fontFamily="@font/custom_regular"
+            android:text="女" />
+
+        <ImageView
+            android:id="@+id/iv_personal_setting_right_img_2"
+            style="@style/ImageView" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FAFAFB" />
+    <RelativeLayout
+        android:id="@+id/rl_personal_setting_center"
+        style="@style/RelativeLayoutPersonalSetting"
+        android:layout_marginTop="20dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FAFAFB" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            style="@style/TextViewPersonalSetting"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/custom_regular"
+            android:text="所属机构" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_personal_setting_center"
+            style="@style/TextViewPersonalSettingUpdata"
+            android:layout_toLeftOf="@id/iv_personal_setting_right_img_3"
+            android:fontFamily="@font/custom_regular"
+            android:text="亿程西安研发中心" />
+
+        <ImageView
+            android:id="@+id/iv_personal_setting_right_img_3"
+            style="@style/ImageView" />
+
+        <View
+            android:id="@+id/view2"
+            style="@style/ViewPersonalSetting" />
+
+
+    </RelativeLayout>
+    <View style="@style/ViewPersonalSetting" />
+    <RelativeLayout
+        android:id="@+id/rl_personal_setting_identity"
+        style="@style/RelativeLayoutPersonalSetting">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            style="@style/TextViewPersonalSetting"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/custom_regular"
+            android:text="职位" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_personal_setting_identity"
+            style="@style/TextViewPersonalSettingUpdata"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/custom_regular"
+            android:text="销售总监" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FAFAFB" />
+    <RelativeLayout
+        android:id="@+id/rl_personal_setting_tel"
+        style="@style/RelativeLayoutPersonalSetting"
+        android:layout_marginTop="20dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FAFAFB" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            style="@style/TextViewPersonalSetting"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/custom_regular"
+            android:text="手机" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_personal_setting_tel"
+            style="@style/TextViewPersonalSettingUpdata"
+            android:layout_toLeftOf="@id/iv_personal_setting_right_img_5"
+            android:fontFamily="@font/custom_regular"
+            android:text="15091100669" />
+
+        <ImageView
+            android:id="@+id/iv_personal_setting_right_img_5"
+            style="@style/ImageView" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_setting_landline"
+        style="@style/RelativeLayoutPersonalSetting">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            style="@style/TextViewPersonalSetting"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/custom_regular"
+            android:text="座机" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_personal_setting_landline"
+            style="@style/TextViewPersonalSettingUpdata"
+            android:layout_toLeftOf="@id/iv_personal_setting_right_img_6"
+            android:fontFamily="@font/custom_regular"
+            android:text="88850127" />
+
+        <ImageView
+            android:id="@+id/iv_personal_setting_right_img_6"
+            style="@style/ImageView" />
+
+    </RelativeLayout>
+
+    <View style="@style/ViewPersonalSetting" />
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_setting_email"
+        style="@style/RelativeLayoutPersonalSetting">
+
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            style="@style/TextViewPersonalSetting"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/custom_regular"
+            android:text="邮箱" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_personal_setting_email"
+            style="@style/TextViewPersonalSettingUpdata"
+            android:layout_toLeftOf="@id/iv_personal_setting_right_img_7"
+            android:fontFamily="@font/custom_regular"
+            android:text="liuchao@" />
+
+        <ImageView
+            android:id="@+id/iv_personal_setting_right_img_7"
+            style="@style/ImageView" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_setting_wechart"
+        style="@style/RelativeLayoutPersonalSetting">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            style="@style/TextViewPersonalSetting"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/custom_regular"
+            android:text="微信" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_personal_setting_wechart"
+            style="@style/TextViewPersonalSettingUpdata"
+            android:layout_toLeftOf="@id/iv_personal_setting_right_img_8"
+            android:fontFamily="@font/custom_regular"
+            android:text="lz-sml" />
+
+        <ImageView
+            android:id="@+id/iv_personal_setting_right_img_8"
+            style="@style/ImageView" />
+
+    </RelativeLayout>
+    <View style="@style/ViewPersonalSetting" />
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_setting_qq"
+        style="@style/RelativeLayoutPersonalSetting">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            style="@style/TextViewPersonalSetting"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/custom_regular"
+            android:text="QQ" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_personal_setting_qq"
+            style="@style/TextViewPersonalSettingUpdata"
+            android:layout_toLeftOf="@id/iv_personal_setting_right_img_9"
+            android:fontFamily="@font/custom_regular"
+            android:text="997530783" />
+
+        <ImageView
+            android:id="@+id/iv_personal_setting_right_img_9"
+            style="@style/ImageView" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FAFAFB" />
+</LinearLayout>

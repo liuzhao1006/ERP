@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_80_dip"
+    android:background="#FEFFFF">
+
+
+    <LinearLayout
+        android:id="@+id/iv_message_image_parent"
+        android:layout_width="@dimen/dimen_70_dip"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/dimen_10_dip"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_message_image_item"
+            android:layout_width="@dimen/dimen_60_dip"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#F5F6F7"
+
+            android:src="@drawable/ren_icon" />
+
+    </LinearLayout>
+
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:id="@+id/tv_message_title_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dimen_12_dip"
+        android:layout_toRightOf="@id/iv_message_image_parent"
+        android:text="标题"
+        android:textColor="#343536"
+        android:textSize="16sp" />
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:id="@+id/tv_message_content_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_12_dip"
+        android:layout_toLeftOf="@id/tv_message_time_item"
+        android:layout_toRightOf="@id/iv_message_image_parent"
+        android:maxLines="1"
+        android:paddingRight="@dimen/dimen_10_dip"
+        android:text="消息内容"
+        android:textColor="#999A9B"
+        android:textSize="12sp" />
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:id="@+id/tv_message_time_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|right"
+        android:text="time"
+        android:textColor="#B4B5B6"
+        android:textSize="12sp" />
+
+</RelativeLayout>

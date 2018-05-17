@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7FFFE"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_wait_organization_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7FFFE">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F7FFFE"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7FFFE"
+                android:orientation="vertical">
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="组织架构"
+                    android:textColor="#A5A9A9"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#EDEEEF" />
+
+                <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+                    android:id="@+id/rlv_maillist_fragment_organizational"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="常用联系人"
+                    android:textColor="#A5A9A9"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#EDEEEF" />
+
+
+                <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+                    android:id="@+id/rlv_maillist_common_contract"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FEFFFF"></com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
+
+
+

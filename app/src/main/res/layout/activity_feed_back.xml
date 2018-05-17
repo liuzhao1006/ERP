@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFFFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_head"></include>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FEFFFF"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <com.ycjt.sx.widget.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/custom_regular"
+                android:padding="5dp"
+                android:text="标题 "
+                android:textColor="#98999A"
+                android:textSize="14sp" />
+
+            <android.support.design.widget.TextInputEditText
+
+                android:id="@+id/et_feed_back_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_green"
+                android:fontFamily="@font/custom_regular"
+                android:hint="请输入标题"
+                android:maxLines="1"
+                android:paddingBottom="3dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="3dp"
+                android:textSize="16sp" />
+
+            <com.ycjt.sx.widget.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/custom_regular"
+                android:padding="5dp"
+                android:text="内容"
+                android:textColor="#98999A"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_green"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputEditText
+
+                    android:id="@+id/et_feed_back_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="top"
+                    android:hint="请输入内容"
+                    android:paddingBottom="14.0dp"
+                    android:paddingLeft="12.0dp"
+                    android:paddingTop="12.0dp"
+                    android:singleLine="false"
+                    android:textSize="16sp" />
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:id="@+id/tv_feed_back_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="10dp"
+                    android:text="300字以内"
+                    android:textColor="#D3D4D5"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#F0F1F1" />
+
+
+                <GridView
+                    android:id="@+id/rlv_feed_book"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:columnWidth="80dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="4"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp"></GridView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#F0F1F1" />
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:id="@+id/tv_feed_back_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="10dp"
+                    android:text="添加图片"
+                    android:textColor="@color/gray"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_feed_back_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/selector_button"
+                android:fontFamily="@font/custom_regular"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <com.ycjt.sx.widget.view.CircularProgress
+            android:id="@+id/cp"
+            android:layout_width="@dimen/dimen_100_dip"
+            android:layout_height="@dimen/dimen_100_dip"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

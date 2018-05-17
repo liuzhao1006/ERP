@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--店铺照片-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店头图片："
+            android:textColor="#292421"
+            android:textSize="16dp" />
+
+        <!--本地上传按钮-->
+        <Button
+            android:id="@+id/local_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="本地上传"
+            android:background="@null"
+            android:textSize="16dp" />
+        <!--牌照上传-->
+        <Button
+            android:id="@+id/take_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="拍照上传"
+            android:background="@drawable/rect_bg"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/choose_pics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:numColumns="5"/>
+</LinearLayout>

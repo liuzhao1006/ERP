@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.ycjt.sx.widget.ReboundScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7FFFE"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1_dip"
+            android:layout_marginTop="@dimen/dimen_3_dip"
+            android:background="#FAFAFA" />
+
+        <com.ycjt.sx.widget.Ripple xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_92_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleBackground="#FEFFFF"
+            app:mrl_rippleColor="#F5F6F7"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleDimension="10dp"
+            app:mrl_rippleDuration="1000"
+            app:mrl_rippleFadeDuration="500"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_ripplePersistent="false"
+            app:mrl_rippleRoundedCorners="@dimen/dimen_1_dip">
+
+            <include layout="@layout/item_personal_info" />
+
+        </com.ycjt.sx.widget.Ripple>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1_dip"
+            android:background="#FAFAFA" />
+
+        <com.ycjt.sx.widget.Ripple xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleBackground="#FEFFFF"
+            app:mrl_rippleColor="#F5F6F7"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleDimension="10dp"
+            app:mrl_rippleDuration="1000"
+            app:mrl_rippleFadeDuration="500"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_ripplePersistent="false"
+            app:mrl_rippleRoundedCorners="@dimen/dimen_1_dip">
+
+            <RelativeLayout
+                android:id="@+id/rl_personal_organizational"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center_vertical"
+                    android:text="切换组织机构"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_personal_right_7"
+                    style="@style/ImageView" />
+
+            </RelativeLayout>
+
+        </com.ycjt.sx.widget.Ripple>
+
+
+        <View style="@style/ViewPersonalSetting" />
+
+
+        <com.ycjt.sx.widget.Ripple xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            app:mrl_rippleAlpha="0.5"
+
+            app:mrl_rippleBackground="#FEFFFF"
+            app:mrl_rippleColor="#F5F6F7"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleDimension="10dp"
+            app:mrl_rippleDuration="1000"
+            app:mrl_rippleFadeDuration="500"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_ripplePersistent="false"
+            app:mrl_rippleRoundedCorners="@dimen/dimen_1_dip">
+
+            <RelativeLayout
+                android:id="@+id/rl_personal_updata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center_vertical"
+                    android:text="修改密码"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_personal_right_1"
+                    style="@style/ImageView" />
+
+            </RelativeLayout>
+
+        </com.ycjt.sx.widget.Ripple>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1_dip"
+            android:background="#FAFAFA" />
+
+        <com.ycjt.sx.widget.Ripple xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleBackground="#FEFFFF"
+            app:mrl_rippleColor="#F5F6F7"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleDimension="10dp"
+            app:mrl_rippleDuration="1000"
+            app:mrl_rippleFadeDuration="500"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_ripplePersistent="false"
+            app:mrl_rippleRoundedCorners="@dimen/dimen_1_dip">
+
+            <RelativeLayout
+                android:id="@+id/rl_personal_notification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1_dip"
+                    android:background="#FAFAFA" />
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center_vertical"
+                    android:text="新消息通知"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_personal_right_2"
+                    style="@style/ImageView" />
+
+            </RelativeLayout>
+
+        </com.ycjt.sx.widget.Ripple>
+
+        <View style="@style/ViewPersonalSetting" />
+
+        <com.ycjt.sx.widget.Ripple xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleBackground="#FEFFFF"
+            app:mrl_rippleColor="#F5F6F7"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleDimension="10dp"
+            app:mrl_rippleDuration="1000"
+            app:mrl_rippleFadeDuration="500"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_ripplePersistent="false"
+            app:mrl_rippleRoundedCorners="@dimen/dimen_1_dip">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_personal_common"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center_vertical"
+                    android:text="通用"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_personal_right_3"
+                    style="@style/ImageView" />
+
+            </RelativeLayout>
+
+
+        </com.ycjt.sx.widget.Ripple>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1_dip"
+            android:background="#FAFAFA" />
+
+
+        <com.ycjt.sx.widget.Ripple xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleBackground="#FEFFFF"
+            app:mrl_rippleColor="#F5F6F7"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleDimension="10dp"
+            app:mrl_rippleDuration="1000"
+            app:mrl_rippleFadeDuration="500"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_ripplePersistent="false"
+            app:mrl_rippleRoundedCorners="@dimen/dimen_1_dip">
+
+            <RelativeLayout
+                android:id="@+id/rl_personal_help"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1_dip"
+                    android:background="#FAFAFA" />
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center_vertical"
+                    android:text="帮助中心"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_personal_right_4"
+                    style="@style/ImageView" />
+
+            </RelativeLayout>
+
+
+        </com.ycjt.sx.widget.Ripple>
+
+        <View style="@style/ViewPersonalSetting" />
+
+        <com.ycjt.sx.widget.Ripple xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleBackground="#FEFFFF"
+            app:mrl_rippleColor="#F5F6F7"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleDimension="10dp"
+            app:mrl_rippleDuration="1000"
+            app:mrl_rippleFadeDuration="500"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_ripplePersistent="false"
+            app:mrl_rippleRoundedCorners="@dimen/dimen_1_dip">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_personal_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center_vertical"
+                    android:text="意见反馈"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_personal_right_5"
+                    style="@style/ImageView" />
+
+            </RelativeLayout>
+
+        </com.ycjt.sx.widget.Ripple>
+
+        <View style="@style/ViewPersonalSetting" />
+
+        <com.ycjt.sx.widget.Ripple xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleBackground="#FEFFFF"
+            app:mrl_rippleColor="#F5F6F7"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleDimension="10dp"
+            app:mrl_rippleDuration="1000"
+            app:mrl_rippleFadeDuration="500"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_ripplePersistent="false"
+            app:mrl_rippleRoundedCorners="@dimen/dimen_1_dip">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_personal_about"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center_vertical"
+                    android:text="关于"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_personal_right_6"
+                    style="@style/ImageView" />
+
+            </RelativeLayout>
+
+        </com.ycjt.sx.widget.Ripple>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1_dip"
+            android:background="#FAFAFA" />
+
+        <com.ycjt.sx.widget.Ripple xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55_dip"
+            android:layout_margin="@dimen/dimen_20_dip"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleBackground="@android:color/transparent"
+            app:mrl_rippleColor="#F5F6F7"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleDimension="10dp"
+            app:mrl_rippleDuration="1000"
+            app:mrl_rippleFadeDuration="500"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_ripplePersistent="false"
+            app:mrl_rippleRoundedCorners="@dimen/dimen_1_dip">
+
+            <Button
+                android:id="@+id/btn_personal_log_out"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_button_normal"
+                android:fontFamily="@font/custom_regular"
+                android:gravity="center"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </com.ycjt.sx.widget.Ripple>
+    </LinearLayout>
+
+
+</com.ycjt.sx.widget.ReboundScrollView>

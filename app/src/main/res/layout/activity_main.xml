@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="com.ycjt.sx.base.MainActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7FFFE"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_head"></include>
+
+
+        <com.ycjt.sx.widget.NoScrollViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#B8B8B8" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_agency_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:id="@+id/btn_message_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:id="@+id/btn_workbench_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:id="@+id/btn_maillist_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:id="@+id/btn_personal_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent" />
+
+
+            </LinearLayout>
+
+            <RadioGroup
+
+                android:id="@+id/rg_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_1"
+                    style="@style/BottomTabStyle"
+                    android:checked="true"
+                    android:drawableTop="@drawable/selector_agency"
+                    android:fontFamily="@font/custom_regular"
+                    android:text="待办"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/rb_2"
+                    style="@style/BottomTabStyle"
+                    android:checked="true"
+                    android:drawableTop="@drawable/selector_message"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center_horizontal"
+                    android:text="消息" />
+
+                <RadioButton
+                    android:id="@+id/rb_3"
+                    style="@style/BottomTabStyle"
+                    android:checked="true"
+                    android:drawableTop="@drawable/selector_workbench"
+                    android:fontFamily="@font/custom_regular"
+                    android:text="工作台" />
+
+                <RadioButton
+                    android:id="@+id/rb_4"
+                    style="@style/BottomTabStyle"
+                    android:checked="true"
+                    android:drawableTop="@drawable/selector_maillist"
+                    android:fontFamily="@font/custom_regular"
+                    android:text="通讯录" />
+
+                <RadioButton
+                    android:id="@+id/rb_5"
+                    style="@style/BottomTabStyle"
+                    android:checked="true"
+                    android:drawableTop="@drawable/selector_personal"
+                    android:fontFamily="@font/custom_regular"
+                    android:text="我" />
+            </RadioGroup>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

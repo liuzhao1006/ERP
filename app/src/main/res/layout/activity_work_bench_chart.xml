@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7FFFE"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.ycjt.sx.erp.workbench.activity.WorkBenchChartSaleActivity">
+
+
+    <include layout="@layout/activity_head" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/group_back" />
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/custom_regular"
+        android:gravity="center_vertical"
+        android:text="销售占比例统计"
+        android:textColor="#A2A6A6"
+        android:textSize="14sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/group_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:background="#FEFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/custom_regular"
+                    android:padding="3dp"
+                    android:text="图例"
+                    android:textColor="#3C3D3F"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/s6"
+                    android:layout_width="18sp"
+                    android:layout_height="18sp"
+                    android:background="@drawable/chart_hint"></Button>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <com.ycjt.sx.widget.view.CircularProgress
+                    android:id="@+id/cp"
+                    android:layout_width="@dimen/dimen_70_dip"
+                    android:layout_height="@dimen/dimen_70_dip"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/s3"
+                    android:layout_width="0dp"
+                    android:layout_height="22dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"></Button>
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center"
+                    android:text="年"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/s4"
+                    android:layout_width="0dp"
+                    android:layout_height="22dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"></Button>
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center"
+                    android:text="月"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center"
+                    android:text="总额(元)"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp" />
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:id="@+id/tv_sale_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#EFEFF0" />
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/custom_regular"
+        android:gravity="center_vertical"
+        android:text="销售趋势统计"
+        android:textColor="#A2A6A6"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#EFEFF0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/custom_regular"
+            android:gravity="center_vertical"
+            android:text="公司"
+            android:textColor="#B2B3B4"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/s5"
+            android:layout_width="75dp"
+            android:layout_height="22dp"
+            android:background="@drawable/spinner"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textSize="12sp"></Button>
+
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/seekBar1"
+        android:layout_weight="1"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+
+            android:orientation="horizontal">
+
+
+            <com.ycjt.sx.widget.fonts.FontTextView
+                android:id="@+id/tv_work_month"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/custom_regular"
+                android:gravity="center"
+                android:text="本月"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:id="@+id/tv_work_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:id="@+id/tv_work_money_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center"
+                    android:text="销售总额(元)"
+                    android:textColor="#A6A7A8"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:id="@+id/tv_work_mounth"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center"
+                    android:text="0.0"
+                    android:textColor="#41DE98"
+                    android:textSize="14sp" />
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:id="@+id/tv_work_mounth_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center"
+                    android:text="同比(%)"
+                    android:textColor="#A6A7A8"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:id="@+id/tv_work_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center"
+                    android:text="0.0"
+                    android:textColor="#E58647"
+                    android:textSize="14sp" />
+
+                <com.ycjt.sx.widget.fonts.FontTextView
+                    android:id="@+id/tv_work_up_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/custom_regular"
+                    android:gravity="center"
+                    android:text="环比(%)"
+                    android:textColor="#A6A7A8"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

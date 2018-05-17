@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_agency_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F7FFFE"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <!-- <android.support.design.widget.TextInputEditText
+             android:id="@+id/et_fragment_agency_search"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="5dp"
+             android:layout_marginLeft="@dimen/default_margin_16dp"
+             android:layout_marginRight="@dimen/default_margin_16dp"
+             android:layout_marginTop="5dp"
+             android:layout_weight="1"
+             android:background="@drawable/shape_rectangle_corners_five"
+             android:drawableLeft="@mipmap/search"
+             android:gravity="center"
+             android:hint="搜索"
+             android:imeActionLabel="确认"
+             android:imeOptions="actionDone"
+             android:padding="@dimen/default_margin_8dp"
+             android:textSize="12sp" />-->
+
+        <com.ycjt.sx.widget.IconCenterEditText
+            android:id="@+id/et_fragment_agency_search"
+            style="@style/StyleEditText"
+            android:fontFamily="@font/custom_regular" />
+
+        <Button
+            android:id="@+id/btn_agency_search"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/default_margin_16dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E6ECEB" />
+
+    <FrameLayout
+        android:id="@+id/fl_agency_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/pagerTab"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                tl:tl_divider_color="#C4C5C6"
+                tl:tl_divider_width="1dp"
+                tl:tl_indicator_color="#5BE1A1"
+                tl:tl_indicator_width="120dp"
+                tl:tl_tab_padding="0dp"
+                tl:tl_tab_width="120dp"
+                tl:tl_textSelectColor="#656667"
+                tl:tl_textUnselectColor="#4E5051"
+                tl:tl_textsize="14sp"
+                tl:tl_underline_color="@color/white"
+                tl:tl_underline_height="2dp" />
+
+            <View
+                android:id="@+id/view_agency"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/pagerTab"
+                android:layout_marginBottom="3dp"
+                android:background="#D6D6D8" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/view_agency" />
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_agency_search_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+                android:id="@+id/rlv_agency_search_answer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

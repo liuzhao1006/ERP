@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash_anim"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="150dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:id="@+id/tv_splash_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:text="亿云, 开启移动办公之旅"
+        android:textAlignment="center"
+        android:textColor="#5CCD96"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:text="广州亿程交通信息有限公司"
+        android:textAlignment="center"
+        android:textColor="#979899"
+        android:textSize="12sp" />
+</LinearLayout>

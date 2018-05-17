@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FEFFFF"
+    android:layout_height="40dp"
+    >
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:id="@+id/tv_organization_selector"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:fontFamily="@font/custom_regular"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="西安分公司"
+        android:textColor="#0C0E11"
+        android:textSize="20sp" />
+
+</LinearLayout>

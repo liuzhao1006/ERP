@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/iv_maillist_left_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ebpay_pwdpay_next_gray" />
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:id="@+id/tv_maillist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_maillist_left_2"
+        android:fontFamily="@font/custom_regular"
+        android:text="姓名"
+        android:textColor="#171A1D"
+        android:textSize="16sp" />
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:id="@+id/tv_maillist_position"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/tv_maillist_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_maillist_left_2"
+        android:fontFamily="@font/custom_regular"
+        android:text="职位"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/iv_maillist_tel"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/default_margin_8dp"
+        android:src="@drawable/maillist_icon_tel" />
+</RelativeLayout>

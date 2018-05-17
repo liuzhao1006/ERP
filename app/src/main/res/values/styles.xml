@@ -1,0 +1,202 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ButtonTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorButtonNormal">#FF4081</item><!--正常状态下的颜色  -->
+        <item name="colorControlHighlight">#22000000</item><!--覆盖色，按下的颜色  -->
+    </style>
+
+
+    <style name="BoldText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ImageView">
+
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@mipmap/head_rigth</item>
+        <item name="android:layout_centerVertical">true</item>
+
+
+    </style>
+
+    <style name="ImageView_personal">
+
+        <item name="android:layout_width">8dp</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/fab_margin</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_centerVertical">true</item>
+
+
+    </style>
+
+    <style name="TextViewPersonalSetting">
+
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+    <style name="ViewPersonalSetting">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginRight">@dimen/default_margin_16dp</item>
+        <item name="android:layout_marginLeft">@dimen/default_margin_16dp</item>
+        <item name="android:background">#FAFBFB</item>
+
+
+    </style>
+
+
+    <style name="RelativeLayoutPersonalSetting">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="TextViewPersonalSettingUpdata">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextViewEditTextModify">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">3dp</item>
+    </style>
+
+    <style name="EditTextTextViewModify">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/selector_uploadpwd</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:padding">3dp</item>
+    </style>
+
+    <style name="EditTextTextViewModify2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/shape_rectangle_corners_green_five</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:padding">3dp</item>
+    </style>
+
+    <style name="BottomTabStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">@color/txt_tab_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="UploadDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowAnimationStyle">@style/UploadDialogAnim</item>
+    </style>
+
+    <style name="UploadDialogAnim">
+        <item name="android:windowEnterAnimation">@anim/input_method_enter</item>
+        <item name="android:windowExitAnimation">@anim/input_method_exit</item>
+    </style>
+
+
+    <!--搜索框在中间-->
+    <style name="StyleEditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shape_rectangle_corners_five</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableStart">@drawable/icon_search</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">#AFB0B1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:hint">搜索</item>
+    </style>
+
+
+    <!--聊天配置-->
+    <style name="text_subhead_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <!--聊天-->
+    <style name="text_body">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_sub</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <declare-styleable name="superrecyclerview"><attr format="reference" name="layout_empty"/><attr format="reference" name="layout_progress"/><attr format="reference" name="layout_error"/><attr format="boolean" name="recyclerClipToPadding"/><attr format="dimension" name="recyclerPadding"/><attr format="dimension" name="recyclerPaddingTop"/><attr format="dimension" name="recyclerPaddingBottom"/><attr format="dimension" name="recyclerPaddingLeft"/><attr format="dimension" name="recyclerPaddingRight"/><attr name="scrollbarStyle">
+        <enum name="insideOverlay" value="0x0"/>
+        <enum name="insideInset" value="0x01000000"/>
+        <enum name="outsideOverlay" value="0x02000000"/>
+        <enum name="outsideInset" value="0x03000000"/>
+    </attr><attr name="scrollbars">
+        <enum name="vertical" value="1"/>
+        <enum name="horizontal" value="0"/>
+        <enum name="none" value="2"/>
+    </attr></declare-styleable>
+
+
+</resources>

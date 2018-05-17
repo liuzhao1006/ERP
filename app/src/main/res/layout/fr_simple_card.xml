@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFFFF"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="2dp">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.ycjt.sx.widget.view.CircularProgress
+            android:id="@+id/cp"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dimen_70_dip"
+            android:layout_height="@dimen/dimen_70_dip" />
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/s1"
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:background="@drawable/spinner"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"></Button>
+
+            <com.ycjt.sx.widget.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/custom_regular"
+                android:gravity="center"
+                android:text="年"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/s2"
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:background="@drawable/spinner"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"></Button>
+
+            <com.ycjt.sx.widget.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/custom_regular"
+                android:gravity="center"
+                android:text="月"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.ycjt.sx.widget.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom_regular"
+                android:gravity="center"
+                android:text="总额(元)"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <com.ycjt.sx.widget.fonts.FontTextView
+                android:id="@+id/tv_simple_card_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom_regular"
+                android:gravity="center"
+                android:text="100.00"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_workbench_chart_more"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <com.ycjt.sx.widget.fonts.FontTextView
+                android:id="@+id/tv_workbench_more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/custom_regular"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="更多"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <!--<item name="android:layout_width">5dp</item>
+            <item name="android:layout_height">10dp</item>
+            <item name="android:layout_alignParentRight">true</item>
+            <item name="android:layout_marginRight">@dimen/fab_margin</item>
+            <item name="android:scaleType">fitXY</item>
+            <item name="android:src">@mipmap/head_rigth</item>
+            <item name="android:layout_centerVertical">true</item>
+            -->
+
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="10dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/head_rigth" />
+
+            <ImageView style="@style/ImageView" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+
+    <View
+        android:id="@+id/viewu"
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@color/gray" />
+
+    <View
+        android:id="@+id/viewd"
+        android:layout_width="1dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@color/gray" />
+
+    <ImageView
+        android:id="@+id/iv_agency_details_selector"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/agency_details_no_selector" />
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:id="@+id/tv_agency_details_stepname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/iv_agency_details_selector"
+        android:gravity="center_vertical"
+
+        android:paddingTop="15dp"
+        android:text="审核"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:id="@+id/tv_agency_details_receivename"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_agency_details_selector"
+        android:gravity="center_vertical"
+        android:paddingTop="15dp"
+        android:text="admin"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:id="@+id/tv_agency_details_receivetime"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/tv_agency_details_receivename"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_agency_details_selector"
+        android:gravity="center_vertical"
+        android:text="time"
+        android:textColor="#C4C5C6"
+        android:textSize="10sp" />
+
+</RelativeLayout>
+

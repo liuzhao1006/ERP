@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.ycjt.sx.widget.Ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_60_dip"
+    app:mrl_rippleAlpha="0.5"
+    app:mrl_rippleBackground="#FEFFFF"
+    app:mrl_rippleColor="#F5F6F7"
+    app:mrl_rippleDelayClick="true"
+    app:mrl_rippleDimension="10dp"
+    app:mrl_rippleDuration="1000"
+    app:mrl_rippleFadeDuration="500"
+    app:mrl_rippleHover="true"
+    app:mrl_rippleOverlay="true"
+    app:mrl_ripplePersistent="false"
+    app:mrl_rippleRoundedCorners="@dimen/dimen_1_dip">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/ll_maillist_organizational"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:background="#FEFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_5_dip"
+        android:paddingLeft="@dimen/dimen_5_dip"
+        android:paddingTop="@dimen/dimen_5_dip">
+
+        <ImageView
+            android:id="@+id/iv_maillist_left_1"
+            android:layout_width="@dimen/dimen_40_dip"
+            android:layout_height="@dimen/dimen_40_dip"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:src="@drawable/maillist_org" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_maillist_unit_name"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_30_dip"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_marginRight="@dimen/dimen_12_dip"
+            android:layout_weight="1"
+            android:fontFamily="@font/custom_regular"
+            android:gravity="center_vertical"
+            android:text="广州公司"
+            android:textColor="#2F3031"
+            android:textSize="14sp" />
+
+        <ImageView style="@style/ImageView" />
+
+    </LinearLayout>
+</com.ycjt.sx.widget.Ripple>

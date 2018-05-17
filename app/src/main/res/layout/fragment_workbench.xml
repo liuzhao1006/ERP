@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#F7FFFE"
+        android:fontFamily="@font/custom_regular"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="报表统计"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#FDF0F0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tl_3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            tl:tl_divider_color="@color/gray"
+            tl:tl_divider_width="1dp"
+            tl:tl_indicator_color="@color/green_inde"
+            tl:tl_indicator_margin_left="2dp"
+            tl:tl_indicator_margin_right="2dp"
+            tl:tl_indicator_width="180dp"
+            tl:tl_tab_padding="0dp"
+            tl:tl_tab_width="180dp"
+            tl:tl_textSelectColor="#3EDF96"
+            tl:tl_textUnselectColor="@color/black"
+            tl:tl_textsize="14sp"
+            tl:tl_underline_color="#EBECED"
+            tl:tl_underline_height="2dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#FDF0F0" />
+
+        <com.ycjt.sx.widget.LzScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#F7FFFE"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.ycjt.sx.widget.fonts.FontTextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/custom_regular"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="物控业务"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical|right"
+                        android:src="@drawable/setting_m"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#FDF0F0" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rlv_work_bench_business"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FEFFFF"></android.support.v7.widget.RecyclerView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#FDF0F0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#F7FFFE"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.ycjt.sx.widget.fonts.FontTextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/custom_regular"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="财务业务"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical|right"
+                        android:src="@drawable/setting_m"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#FDF0F0" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rlv_work_bench_work"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FEFFFF"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+        </com.ycjt.sx.widget.LzScrollView>
+
+
+    </LinearLayout>
+</LinearLayout>

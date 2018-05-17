@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteSmoke"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_head" />
+
+    <View style="@style/ViewPersonalSetting" />
+
+    <include layout="@layout/item_personal_info" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FEFFFF">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_setting_contact_tel"
+            style="@style/TextViewEditTextModify"
+            android:fontFamily="@font/custom_regular"
+            android:text="手机" />
+
+        <EditText
+            android:id="@+id/et_setting_contact_tel"
+            style="@style/EditTextTextViewModify2"
+            android:layout_toRightOf="@id/tv_setting_contact_tel" />
+
+        <View style="@style/ViewPersonalSetting" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FEFFFF">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_setting_contact_landline"
+            style="@style/TextViewEditTextModify"
+            android:fontFamily="@font/custom_regular"
+            android:text="座机" />
+
+        <EditText
+            android:id="@+id/et_setting_contact_landline"
+            style="@style/EditTextTextViewModify2"
+            android:layout_toRightOf="@id/tv_setting_contact_landline" />
+
+        <View style="@style/ViewPersonalSetting" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FEFFFF">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_setting_contact_email"
+            style="@style/TextViewEditTextModify"
+            android:fontFamily="@font/custom_regular"
+            android:text="邮箱" />
+
+        <EditText
+            android:id="@+id/et_setting_contact_email"
+            style="@style/EditTextTextViewModify2"
+            android:layout_toRightOf="@id/tv_setting_contact_email" />
+
+        <View style="@style/ViewPersonalSetting" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FEFFFF">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_setting_contact_wechart"
+            style="@style/TextViewEditTextModify"
+            android:fontFamily="@font/custom_regular"
+            android:text="微信" />
+
+        <EditText
+            android:id="@+id/et_setting_contact_wechart"
+            style="@style/EditTextTextViewModify2"
+            android:layout_toRightOf="@id/tv_setting_contact_wechart" />
+
+        <View style="@style/ViewPersonalSetting" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FEFFFF">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_setting_contact_qq"
+            style="@style/TextViewEditTextModify"
+            android:fontFamily="@font/custom_regular"
+            android:text="QQ" />
+
+        <EditText
+            android:id="@+id/et_setting_contact_qq"
+            style="@style/EditTextTextViewModify2"
+            android:layout_toRightOf="@id/tv_setting_contact_qq" />
+
+        <View style="@style/ViewPersonalSetting" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_setting_contact_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_button"
+        android:fontFamily="@font/custom_regular"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>

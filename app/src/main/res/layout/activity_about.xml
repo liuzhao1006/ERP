@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7FFFC"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_head" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+
+            android:src="@mipmap/ic_launcher" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/custom_regular"
+            android:text="亿云"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/custom_regular"
+            android:text="V 0.0.1"
+            android:textColor="@color/Gray"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FEFFFF"
+
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_about_version"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#FEFFFF"
+            android:fontFamily="@font/custom_regular"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="检测新版本"
+            android:textColor="#111915"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="#EFF3F3" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+            android:id="@+id/tv_about_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#FEFFFF"
+            android:fontFamily="@font/custom_regular"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="更新日志"
+            android:textColor="#111915"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent" />
+
+        <com.ycjt.sx.widget.fonts.FontTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="广州亿程交通信息有限公司 版权所有"
+            android:textColor="#C9CACB"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

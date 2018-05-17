@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/shape_head_background">
+
+
+    <ImageView
+        android:id="@+id/iv_head_false"
+        android:layout_width="35dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/goback" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/ib_top_base_left"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside" />
+
+
+    <com.ycjt.sx.widget.fonts.FontTextView
+        android:id="@+id/tv_top_base_moddle"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/custom_regular"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="activity基类"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/ib_top_base_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/right_press"
+        android:visibility="gone" />
+
+</RelativeLayout>
